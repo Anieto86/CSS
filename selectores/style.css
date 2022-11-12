@@ -1,0 +1,20 @@
+/* Selection by tag */
+p {
+  margin: 20px;
+  color: crimson;
+  text-decoration: underline blueviolet;
+}
+
+.highlight {
+  background-color: red;
+  color: black;
+}
+
+.space {
+  margin-left: 50px;
+}
+
+#principle {
+  font-size: 80px;
+  background-color: blueviolet;
+}

@@ -1,0 +1,26 @@
+/* Si te fijas bien el color rojo paso las <p> y A article como el font-family y el font-size */
+/* Ejemplo de herencia */
+
+html {
+  color: rgb(245, 37, 37);
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+/* border no es heredable, solo fue usando en article y no en p */
+article {
+  width: 70%;
+  margin: 1rem auto;
+  border: 3px dashed purple;
+}
+
+/* heredan los valores del padre (article) 3px dashed purple; */
+/* hicimos una propiedad no heredable heredable */
+p {
+  border: inherit;
+}
+
+/* para saltar la herencia podemos usar psudo clases  */
+p:last-of-type {
+  border: none;
+}

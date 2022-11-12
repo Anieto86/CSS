@@ -1,0 +1,37 @@
+#principal section p {
+  font-size: 20px;
+  color: blue;
+  line-height: 2;
+}
+
+h3.destacado a {
+  color: chartreuse;
+}
+
+footer nav.legal a {
+  text-decoration: rgb(32, 121, 36);
+  color: chartreuse;
+}
+
+section #mensaje p.destacado.final {
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: none;
+  color: deeppink;
+}
+
+input:focus {
+  background-color: gold;
+  border-inline: brown;
+}
+
+article p:first-child {
+  font-size: 1.5em;
+  color: rgb(160, 95, 144);
+}
+
+a:not(.pseuPorRelacion) {
+  color: aquamarine;
+}

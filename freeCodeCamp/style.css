@@ -1,0 +1,76 @@
+body {
+  background-color: #dfdfe2;
+}
+
+main {
+  font-family: "Courier New", Courier, monospace;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  color: #0a0a23;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* pseudoElementos */
+.content h1::first-letter,
+.content h2::first-letter,
+.content h3::first-letter {
+  text-decoration: underline;
+}
+
+.icon img {
+  width: 64px;
+  margin-right: 64px;
+}
+
+/* esto saca el margin en el ultimo icon con pseudoClass */
+.icon img:last-child {
+  margin-right: 0;
+}
+
+.icon p {
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.rest a {
+  color: #0a0a23;
+  background-color: #fecc4c;
+  border: 3px solid orange;
+  font-family: monospace;
+  font-size: 30px;
+  text-decoration: none;
+
+  /*note width no funcionan en anchor element simple
+  por ques un "elemento inline" ocupan el maximo de espacio aunque no se note 
+  para elinar el inline uso display:block*/
+  /* width: 100%; */
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* pseudoClases */
+.rest a:hover {
+  background-color: orange;
+}
+
+.rest {
+  margin-top: 40px;
+}
+
+.rest img {
+  /* para ajustar la imagen al contenedor se usa  width: 100%;. El 100% se calcula en base al tamanio 
+  del contenedor en este caso 600px (main) osea 100% === 600px*/
+  width: 100%;
+}
+
+.rest h4 {
+  text-align: center;
+}

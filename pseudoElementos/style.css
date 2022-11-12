@@ -1,0 +1,35 @@
+/* pseudo elementos typograficos */
+
+h1::first-letter {
+  color: red;
+  font-weight: 100;
+}
+
+p::first-line {
+  color: purple;
+  font-weight: bold;
+}
+
+/* pseudop elementos de contenido */
+h2::after {
+}
+
+ul {
+  list-style-type: none;
+}
+
+li::before {
+  content: "👍😡";
+  margin-right: 100px;
+}
+
+li::after {
+  content: "😡👍";
+  margin-left: 30px;
+}
+
+li::selection {
+  color: brown;
+  font-weight: bold;
+  background-color: chartreuse;
+}
