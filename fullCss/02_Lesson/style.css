@@ -1,0 +1,36 @@
+/* Universal selector */
+* {
+  font-family: cursive;
+}
+
+body {
+  font-size: 22px;
+}
+
+/* la coma sirve para tomar los dos selectores, si no hay coma CSS busca un h2 hijo dentro de h1 padre */
+h1,
+h2 {
+  color: blue;
+}
+
+.highlight {
+  text-transform: uppercase;
+  background-color: chartreuse;
+}
+
+/* p span {  this the same selector than above. Select by class is much better than this way. 
+  text-transform: uppercase;
+  background-color: chartreuse;
+} */
+
+p {
+  color: blueviolet;
+}
+
+.gray {
+  color: gray;
+}
+
+#second {
+  font-style: italic;
+}
