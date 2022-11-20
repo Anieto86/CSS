@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* css reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+nav {
+  border: 3px solid purple;
+  border-radius: 2rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  font-size: 3rem;
+  line-height: 7rem;
+}
+
+h2 {
+  padding: 1rem;
+  background-color: goldenrod;
+  border-radius:  1.8rem  1.8rem  0 0;
+}
+
+ul {
+  /* remove the bullet point */
+  list-style-type:none;
+}
+
+li {
+   border-top: 2px solid purple;
+}
+
+li a {
+  /* li element are inline el;element but we change to block element, bonus block element are 100% width */
+  display: block;
+}
+
+li a, li a:visited {
+ text-decoration : none;
+ color:#333;
+}
+
+li a:hover, li a:focus {
+  background : #333;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+li:last-child a {
+  border-radius:0 0 1.8rem 1.8rem  ;
+}
