@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.columns {
+  /* column-count: 4;
+  column-width: 250px;  esto es lo mismo que la linea de abajo */
+  columns: 4 250px;
+  column-rule: 3px solid rgb(192, 23, 57);
+  column-gap: 3rem;
+}
+
+.columns p {
+  /* notar que elimna el top margin pero no el margin estre parrafos */
+  margin-top: 0;
+}
+
+.columns h2 {
+  margin-top: 0;
+  background-color: blue;
+  color: beige;
+  text-align: center;
+}
+
+.columns .quote {
+  /* el margin-top solo se aplica si especificmos mas specicidad | agramos .columns al class .quote */
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  /* esto rompio la columas y se expandi el parrafoenc en todo el largo */
+  column-span: all;
+}
+
+.columns span {
+  /* esto es para que cuando se quiere colapsar un seccion toda junta  | cuando se achica el -The Dude va todo junto */
+  white-space: nowrap;
+}
