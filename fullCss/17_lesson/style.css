@@ -7,8 +7,102 @@
   box-sizing: border-box;
 }
 
+/* syntax:
+@media media type and (condition : breakpoint) {
+  //css rule
+} */
+
+/* @media screen and (min-width:481px) {} */
+
 /* || GENERAL STYLES */
 body {
   font: 1.5rem "Nunito", sans-serif;
   min-height: 100vh;
+  background-color: dodgerblue;
+  background-image: radial-gradient(white, dodgerblue);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  position: sticky;
+  background-color: chartreuse;
+  color: blueviolet
+}
+
+header {
+  top: 0
+}
+
+nav {
+  background-color: coral;
+  color: #000;
+  border-bottom: 2px solid black;
+  padding: 0.5rem
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
+}
+
+
+/* SMALL */
+@media screen and (min-width:576px) {
+  body {
+    background-color: red;
+    background-image: radial-gradient(white, red);
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+
+/* MEDIUM */
+@media screen and (min-width:768px) {
+  body {
+    background-color: rgb(255, 111, 0);
+    background-image: radial-gradient(white, rgb(255, 111, 0));
+  }
+
+  nav {
+    display: flex
+  }
+}
+
+/* Large */
+@media screen and (min-width:992px) {
+  body {
+    background-color: goldenrod;
+    background-image: radial-gradient(white, goldenrod);
+  }
+
+
+}
+
+
+/* Xl */
+@media screen and (min-width:1200px) {
+  body {
+    background-color: rebeccapurple;
+    background-image: radial-gradient(white, rebeccapurple);
+  }
+
+
 }
