@@ -29,24 +29,20 @@
 /* || GENERAL STYLES */
 
 /* dark mode from the computer */
-/* no lotoma */
-@media (prefers-color-schema:dark) {
+@media (prefers-color-scheme:dark) {
   :root {
-    --BGCOLOR: #2fac16;
+    --BGCOLOR: #16acaa;
     --LIGHT-COLOR: rgb(218, 32, 32);
   }
 }
 
-
-
 body {
-  font: 1.5rem "Nunito", sans-serif;
-  min-height: 100vh;
-
   background-color: var(--BGCOLOR);
   background-image: radial-gradient(var(--RADIO-COLOR), var(--BGCOLOR));
   display: flex;
   flex-direction: column;
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
 }
 
 header,

@@ -42,13 +42,12 @@
 
 /* || GENERAL STYLES */
 body {
-  font: var(--FS) var(--FF);
-  min-height: 100vh;
-
   background-color: var(--BGCOLOR);
   background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
   display: flex;
   flex-direction: column;
+  font: var(--FS) var(--FF);
+  min-height: 100vh;
 }
 
 header,
@@ -110,4 +109,26 @@ footer {
   place-content: center;
   font-size: var(--FS-XL);
   box-shadow: var(--SHADOWS);
+}
+
+
+a:hover,
+a:focus {
+  filter: brightness(200%)
+}
+
+.tooltip:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -100px;
+  white-space: nowrap;
+  background-color: var(--DARK-COLOR);
+  color: var(--LIGHT-COLOR);
+  padding: var(--PADDING);
+  border-radius: 15px;
+}
+
+.tooltip {
+  border: 1px solid gold;
+  position: relative;
 }

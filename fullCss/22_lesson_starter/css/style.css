@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+
+div:first-child {
+  background-color: dodgerblue;
+  /* transform: translateX(-50%); */
+  /* transform: rotateX(45deg) */
+  /* transform: scaleX(120%); */
+  /* transform: skewX(-10deg); */
+}
+
+div:nth-child(2) {
+  background-color: greenyellow;
+  /* transform: translateY(-2rem); */
+  /* transform: rotateY(180deg); */
+  /* transform: scaleY(120%); */
+  /* transform: skewY(10deg) */
+}
+
+div:last-child {
+  background-color: crimson;
+  /* transform: translate(50%, 20%); */
+  /* transform: rotateZ(45deg); */
+  /* transform: scale(1.5, 1.5); */
+  /* transform: skew(10deg, 10deg) */
+}
+
+div:hover {
+  background-color: blueviolet;
+  /* transition-property: background-color, transform;
+  transition-duration: 2000ms, 3000ms; */
+  /* la siguiente linea es lo mismo que la lineas commnetadas */
+  transition: all 2s 0.5s
+}
+
+div:nth-child(3):hover {
+  background-color: tomato;
+  transform: rotate(180deg);
+
+}
+
+.animate {
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+
+  /* short hand */
+  /* animation: 5s ease-in-out 1s normal forwards slide; */
+}
+
+/* para appplicar las animanciones debemos agragar key frames */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(300px) rotate(180deg);
+  }
+
+  66% {
+    transform: translateX(-300px) rotate(-180deg);
+  }
+
+  100% {
+    transform: translateX(0);
+    background-color: cyan;
+  }
+}
